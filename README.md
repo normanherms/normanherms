@@ -1,16 +1,22 @@
-## Hi there 👋
+# Norman Herms | DevOps Learner
 
-<!--
-**normanherms/normanherms** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 👋 About Me
+IT-Quereinsteiger mit Fokus auf Linux, Container und Infrastruktur-Automation.
+Betreibe ein produktives Homelab mit Debian, Virtualisierung und Self-Hosting.
 
-Here are some ideas to get you started:
+## 🔧 Current Projects
+- 🖥️ Homelab mit Debian, KVM, containerd
+- 🎯 K3s-Cluster in Planung
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 💻 Tech Stack
+- **Linux**: Debian, Fedora
+- **Container**: Docker, containerd, nerdctl
+- **Virtualization**: KVM, libvirt
+- **Config Management**: Ansible (Basics)
+- **Scripting**: Bash, Python (Basics)
+- **Tools**: Git, Markdown, YAML
+
+## 📍 Location & Contact
+- Based in Buxtehude, Germany
+- Open to Junior DevOps / Sysadmin roles
+- [LinkedIn](https://linkedin.com/in/norman-herms)
