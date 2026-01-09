@@ -35,30 +35,43 @@ Sonstiges:
 
 ---
 
-## Homelab Infrastructure (seit Feb 2025)
+## Homelab Infrastructure (seit Februar 2025)
 
-Aktuell produktiv:
+**Aktuell produktiv:**
 
-Dell Optiplex 3070:
+**Dell Optiplex 3070:**
+* Debian mit KVM/libvirt
+* Container-Stack: Jellyfin, Wiki.js, AdGuard Home, Tandoor, Anytype
 
-- Debian mit KVM/libvirt
-- Container-Stack: Jellyfin, Wiki.js, AdGuard Home, Tandoor, Anytype
-
-In Arbeit - K3s-Cluster über WAN:
-
-- Lenovo ThinkCentre M910q
-- 2x Netcup Root Server
-- 1x Netcup VPS
-- WireGuard-Mesh zwischen allen Nodes
+**In Arbeit - K3s-Cluster über WAN:**
+* Lenovo ThinkCentre M910q (K3s Worker)
+* 2× Netcup Root Server (K3s Control Plane + Worker)
+* 1× Netcup VPS (Monitoring)
+* WireGuard-Mesh zwischen allen Nodes
+* DRBD-Replikation geplant
 
 ---
 
 ## Repositories
 
-knowledge-base – Cheatbooks, Lernpfade
+**[knowledge-base](https://github.com/normanherms/knowledge-base)** – Cheatbooks & Infrastructure-Dokumentation
+* Cheatbooks: LPIC-1, Ansible, Git, Python, KVM/libvirt
+* Infrastructure: Cluster-Iterationen, Architektur, Netzwerk-Planung
+* Lernweg mit 7 Cluster-Iterationen dokumentiert
 
-- LPIC-1, Ansible, Git, Python, KVM/libvirt
-- Technische Lernnotizen
+---
+
+## Lernweg
+
+**Abgeschlossen:**
+* Linux Essentials
+* Git
+* Ansible
+* Python Grundkurs
+
+**In Arbeit:**
+* LPIC-1 (101)
+* Bash Scripting
 
 ---
 
