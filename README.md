@@ -8,81 +8,94 @@ Junior Linux System Administrator | Homelab | Career Changer
 
 ## Technische Fähigkeiten
 
-Linux Administration:
-
+**Linux Administration:**
 - Debian Server aufsetzen und verwalten
-- User-Management, SSH-Konfiguration, Partitionierung
-- System-Logs analysieren (journalctl, /var/log)
-- Firewall-Konfiguration (nftables, mit Dokumentation)
+- User-Management, SSH-Hardening (key-only, root disabled)
+- System-Logs analysieren (journalctl, rsyslog)
+- Firewall-Konfiguration (nftables, Default-Drop-Policy, fail2ban)
+- Storage-Management (LVM, Partitionierung, fstab)
 
-Container & Virtualisierung:
+**Container & Virtualisierung:**
+- Container betreiben (containerd/nerdctl, Compose)
+- VMs erstellen und verwalten (KVM/libvirt)
+- Multi-Service-Stacks (Datenbanken, Web-Apps, Reverse Proxy)
 
-- Container betreiben (containerd/nerdctl)
-- VMs erstellen (KVM/libvirt)
-- Multi-Service-Stacks
+**Netzwerk:**
+- WireGuard Full Mesh über WAN + Heimnetz (4 Nodes, NAT-Support)
+- Bridge-Networking (systemd-networkd)
+- Reverse Proxy (nginx, TLS/certbot)
 
-Netzwerk:
+**Monitoring & Observability:**
+- Prometheus + Grafana
+- Node Exporter (systemd services)
+- Logging (rsyslog, journald)
 
-- WireGuard-Tunnel konfigurieren
-- Bridge-Networking (Basics)
-
-Sonstiges:
-
+**Sonstiges:**
 - Backup-Strategien (Restic)
-- Git (Basics)
-- Bash-Scripting (Basics)
-- Technische Dokumentation
+- Git (Workflows, Dokumentation)
+- Bash-Scripting (Automatisierung)
+- Technische Dokumentation (Runbooks, Checklisten)
 
 ---
 
-## Homelab Infrastructure (seit Februar 2025)
+## Homelab Infrastructure (seit Feb 2025)
 
-**Aktuell produktiv:**
+### Produktiv
 
-**Dell Optiplex 3070:**
-* Debian mit KVM/libvirt
-* Container-Stack: Jellyfin, Wiki.js, AdGuard Home, Tandoor, Anytype
+**Homelab (edge):**
 
-**In Arbeit - K3s-Cluster über WAN:**
-* Lenovo ThinkCentre M910q (K3s Worker)
-* 2× Netcup Root Server (K3s Control Plane + Worker)
-* 1× Netcup VPS (Monitoring)
-* WireGuard-Mesh zwischen allen Nodes
-* DRBD-Replikation geplant
+- Debian 13, containerd, libvirt
+- Services: AdGuard Home, Wiki.js, Tandoor, Anytype, Jellyfin, Audiobookshelf
+- VMs: Home Assistant (HAOS)
+
+**Staging-Cluster (4 Nodes):**
+
+- [x] Baseline auf allen Nodes (SSH hardening, nftables, fail2ban, auditd)
+- [x] WireGuard Full Mesh (10.99.99.0/24, NAT-Node-Support)
+- [x] Monitoring Stack (Prometheus, Grafana, Node Exporter)
+- [ ] K3s Deployment (geplant)
+- [ ] DRBD Storage Replication (geplant)
+
+**Hardware:**
+- 1 Liter Mini PC (mirror) – K3s Worker, DRBD Secondary
+- Netcup Root Server (prod) – K3s Worker, DRBD Primary
+- Netcup Root Server (load) – K3s Control Plane
+- Netcup VPS (dash) – Monitoring Node
 
 ---
 
 ## Repositories
 
-**[knowledge-base](https://github.com/normanherms/knowledge-base)** – Cheatbooks & Infrastructure-Dokumentation
-* Cheatbooks: LPIC-1, Ansible, Git, Python, KVM/libvirt
-* Infrastructure: Cluster-Iterationen, Architektur, Netzwerk-Planung
-* Lernweg mit 7 Cluster-Iterationen dokumentiert
+**[knowledge-base](https://github.com/normanherms/knowledge-base) ** – Cheatbooks & Infrastructure-Dokumentation
+- Cheatbooks: Linux Essentials, LPIC-1, Ansible, Git, Python
+- Infrastructure: Cluster-Architektur, Netzwerk-Planung, Runbooks
+- Iterationshistorie: 7 dokumentierte Cluster-Neuaufbauten (inkl. Fehler & Learnings)
 
 ---
 
 ## Lernweg
 
 **Abgeschlossen:**
-* Linux Essentials
-* Git
-* Ansible
-* Python Grundkurs
+- Linux Essentials
+- LPIC-1 (101)
+- Git
+- Ansible
+- Python Grundkurs
 
 **In Arbeit:**
-* LPIC-1 (101)
-* Bash Scripting
+- Bash Scripting
+- Container und Virtualisierung
+- Terraform
+- K3s Cluster
 
 ---
 
 ## Standort & Kontakt
 
-Buxtehude (Hamburg-Umgebung)
-
-Suche: Junior System Administrator Position (Remote/Hamburg)
-
-LinkedIn: https://linkedin.com/in/norman-herms
+📍 Buxtehude (Hamburg-Umgebung)  
+🎯 Suche: Junior System Administrator Position (Remote/Hamburg)  
+💼 LinkedIn: https://linkedin.com/in/norman-herms
 
 ---
 
-Learning in public.
+*Learning in public.*
