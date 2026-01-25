@@ -53,7 +53,7 @@ Junior Linux System Administrator | Homelab | Career Changer
 - [x] Baseline auf allen Nodes (SSH hardening, nftables, fail2ban, auditd)
 - [x] WireGuard Full Mesh (10.99.99.0/24, NAT-Node-Support)
 - [x] Monitoring Stack (Prometheus, Grafana, Node Exporter)
-- [ ] K3s Deployment (geplant)
+- [x] K3s Deployment
 - [ ] DRBD Storage Replication (geplant)
 
 **Hardware:**
